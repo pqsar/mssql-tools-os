@@ -1,5 +1,7 @@
 # MSSQL-TOOLS For OpenShift
-Custom MSSQL-TOOL image for OpenShift
+[![Docker Repository on Quay](https://quay.io/repository/pqsdev/mssql-tools/status "Docker Repository on Quay")](https://quay.io/repository/pqsdev/mssql-tools)
+
+Custom MSSQL-TOOL image for OpenShift. 
 
 
 ## Build
@@ -8,11 +10,12 @@ Clone the repo and :
 
 ```bash
 docker build -f  Dockerfile -t quay.io/pqsdev/mssql-tools:latest .
-docker push quay.io/pqsdev/mssql-tools
 ```
 
 
-## Using this image 
+## Using this image
+
+**Available on [quay.io](https://quay.io/repository/pqsdev/mssql-tools)**
 
 This commands returns an interactive console inside the pod
 ```bash
