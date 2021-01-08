@@ -20,5 +20,6 @@ ENV PATH $PATH:/opt/mssql-tools/bin
 
 USER 1001
 ENTRYPOINT [ "./uid_entrypoint.sh" ]
-#CMD ["/bin/sh"]
+
+
 CMD ["./init.sh"]
