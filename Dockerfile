@@ -1,6 +1,6 @@
 # SQL Server Command Line Tools - custom image
 #FROM quay.io/centos7/s2i-base-centos7
-FROM openshift/base-centos7
+FROM centos:centos7
 
 # Labels
 LABEL maintainer="desarollo@pqs.com.ar"
