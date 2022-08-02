@@ -20,12 +20,16 @@ RUN /bin/bash -c "source ~/.bashrc"
 
 ADD ./uid_entrypoint.sh ./
 ADD ./init.sh ./
+ADD ./health.sh ./
+ADD ./health.sql ./
 RUN chown 1001:0 *.sh && chmod +wx *.sh
 
 RUN chmod g=u /etc/passwd
 ENV PATH $PATH:/opt/mssql-tools/bin
 
 USER 1001
+
+
 ENTRYPOINT [ "./uid_entrypoint.sh" ]
 
 
