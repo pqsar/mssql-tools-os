@@ -21,6 +21,7 @@ RUN /bin/bash -c "source ~/.bashrc"
 ADD ./uid_entrypoint.sh ./
 ADD ./init.sh ./
 ADD ./health.sh ./
+ADD ./health-loop.sh ./
 ADD ./health.sql /tmp/health.sql
 RUN chown 1001:0 *.sh && chmod +wx *.sh
 
