@@ -3,7 +3,7 @@
 FROM centos:centos7
 
 # Labels
-LABEL maintainer="desarollo@pqs.com.ar"
+LABEL maintainer="it_infra@pqs.com.ar"
 LABEL org.label-schema.schema-version="1.0"
 LABEL org.label-schema.name="mssql-tools-centos7"
 LABEL org.label-schema.description="mssql-tools image for openshift"
